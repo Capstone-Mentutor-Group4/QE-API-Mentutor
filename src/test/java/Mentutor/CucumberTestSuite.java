@@ -1,4 +1,4 @@
-package starter;
+package Mentutor;
 
 
 import io.cucumber.junit.CucumberOptions;
