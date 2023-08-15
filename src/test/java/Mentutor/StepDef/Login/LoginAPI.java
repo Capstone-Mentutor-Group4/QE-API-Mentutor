@@ -1,6 +1,7 @@
 package Mentutor.StepDef.Login;
 
 import Mentutor.Utils.Constants;
+import io.cucumber.java.en.And;
 import io.restassured.http.ContentType;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
@@ -15,4 +16,14 @@ public class LoginAPI {
         SerenityRest.given().contentType(ContentType.JSON).body(json);
     }
 
+    @And("Set token to Token Mentor")
+    public void setTokenToMentorToken() {
+        SerenityRest.when().post(LoginAPI.LOGIN);
+        Constants.TOKEN_MENTOR = SerenityRest.then().extract().path("data.token");
+    }
+    @And("Set token to Token Mentee")
+    public void setTokenToBaseMenteeToken() {
+        SerenityRest.when().post(LoginAPI.LOGIN);
+        Constants.TOKEN_MENTEE = SerenityRest.then().extract().path("data.token");
+    }
 }
