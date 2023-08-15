@@ -1,4 +1,4 @@
-package starter;
+package Mentutor;
 
 
 import io.cucumber.junit.CucumberOptions;
@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
+        tags = "@Tugas or @TokenAdmin",
         plugin = {"pretty"},
         features = "classpath:features"
 )
