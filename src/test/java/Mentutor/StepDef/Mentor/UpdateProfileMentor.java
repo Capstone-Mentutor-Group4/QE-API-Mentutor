@@ -50,6 +50,4 @@ public class UpdateProfileMentor {
         File json = new File (Constants.JSON_SCHEMA+"/Mentor/UpdateProfileMentorJSONSchema.json");
         SerenityRest.and().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-
-
 }
