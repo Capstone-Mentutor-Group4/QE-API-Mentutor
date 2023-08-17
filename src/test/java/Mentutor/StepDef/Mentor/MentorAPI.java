@@ -15,6 +15,7 @@ public class MentorAPI {
     public static String CREATE_NEW_TASK = Constants.BASE_URL + "/mentors/tasks";
     public static String MENTOR_TASK = Constants.JSON_REQ_BODY + "/Mentor/AddTask/";
     public static String UPDATE_TASK = Constants.BASE_URL + "/mentors/tasks/{id}";
+    public static String UPDATE_MENTOR_TASK = Constants.JSON_REQ_BODY + "/Mentor/UpdateTask/";
     public static String GET_ALL_TASK_BY_ID_MENTOR = Constants.BASE_URL + "/mentors/tasks";
     public static String GET_DETAIL_TASK = Constants.BASE_URL + "/mentors/tasks/{id}";
     public static String SUBMIT_SCORE = Constants.BASE_URL + "/mentors/submission/{sub}";
@@ -59,31 +60,49 @@ public class MentorAPI {
                 .multiPart("images", images);
     }
 
-//    @Step("Post Create Task By Mentor")
-//    public void setCreateTaskMentor(File json) {
-//        JsonPath fileJson = new JsonPath(json);
-//        File images = new File(Constants.UPLOAD_IMAGE + "test1.PNG");
-//        File file = new File(Constants.UPLOAD_FILE + "test1.pdf");
-//        SerenityRest.given()
-//                .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR)
-//                .contentType("multipart/form-data")
-//                .multiPart("title", fileJson.get("title").toString())
-//                .multiPart("description", fileJson.get("description").toString())
-//                .multiPart("images", images)
-//                .multiPart("file", file)
-//                .multiPart("due_date", fileJson.get("due_date").toString());
-//    }
-
     @Step("Post Create Task By Mentor")
-    public void setCreateTaskMentor(String title, String description,String images, String file, String time) {
-          SerenityRest.given()
+    public void setCreateTaskMentor(File json) {
+        JsonPath fileJson = new JsonPath(json);
+        File images = new File(Constants.UPLOAD_IMAGE + "test1.PNG");
+        File file = new File(Constants.UPLOAD_FILE + "tes1.pdf");
+        SerenityRest.given()
                 .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR)
-//                .contentType("multipart/form-data")
+                .contentType("multipart/form-data")
+                .multiPart("title", fileJson.get("title").toString())
+                .multiPart("description", fileJson.get("description").toString())
+                .multiPart("images", images)
+                .multiPart("file", file)
+                .multiPart("due_date", fileJson.get("due_date").toString());
+    }
+
+    public void setCreateNewTaskValid(String title, String description,String images, String file, String time){
+        SerenityRest.given()
+                .headers("Authorization","Bearer "+ Constants.TOKEN_MENTOR).log().all()
+                .contentType("multipart/form-data")
                 .multiPart("title", title)
                 .multiPart("description", description)
-                .multiPart("images", new File(Constants.UPLOAD_IMAGE +images))
-                .multiPart("file", new File(Constants.UPLOAD_FILE +file))
+                .multiPart("images", new File (Constants.UPLOAD_IMAGE +images))
+                .multiPart("file", new File (Constants.UPLOAD_FILE +file))
                 .multiPart("due_date", time);
+    }
+    public void setCreateTaskMentorIncomplete(String title, String description,String images, String file, String time) {
+        if (images == null) {
+            SerenityRest.given()
+                    .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR).log().all()
+                    .contentType("multipart/form-data")
+                    .multiPart("title", title)
+                    .multiPart("description", description)
+                    .multiPart("file", new File(Constants.UPLOAD_FILE +file))
+                    .multiPart("due_date", time);
+        }else if (file == null) {
+            SerenityRest.given()
+                    .headers("Authorization","Bearer "+ Constants.TOKEN_MENTOR).log().all()
+                    .contentType("multipart/form-data")
+                    .multiPart("title", title)
+                    .multiPart("description", description)
+                    .multiPart("images", new File(Constants.UPLOAD_IMAGE +images))
+                    .multiPart("due_date", time);
+        }
     }
 
     @Step("Get All Task By Mentor")
@@ -117,5 +136,64 @@ public class MentorAPI {
     public void setGetDetailTaskWithoutToken(int id){
         SerenityRest.given().log().all()
                 .pathParam("id",id);
+    }
+
+    @Step("Put Update Task By Mentor")
+    public void setUpdateTaskMentor(int id, File json) {
+        JsonPath fileJson = new JsonPath(json);
+        File images = new File(Constants.UPLOAD_IMAGE + "test2.PNG");
+        File file = new File(Constants.UPLOAD_FILE + "tes2.pdf");
+        SerenityRest.given()
+                .pathParam("id",id)
+                .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR)
+                .contentType("multipart/form-data")
+                .multiPart("title", fileJson.get("title").toString())
+                .multiPart("description", fileJson.get("description").toString())
+                .multiPart("images", images)
+                .multiPart("file", file)
+                .multiPart("due_date", fileJson.get("due_date").toString());
+    }
+
+    public void setUpdateTaskInvalid(String id, File json) {
+        JsonPath fileJson = new JsonPath(json);
+        File images = new File(Constants.UPLOAD_IMAGE + "test2.PNG");
+        File file = new File(Constants.UPLOAD_FILE + "tes2.pdf");
+        SerenityRest.given()
+                .pathParam("id",id)
+                .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR)
+                .contentType("multipart/form-data")
+                .multiPart("title", fileJson.get("title").toString())
+                .multiPart("description", fileJson.get("description").toString())
+                .multiPart("images", images)
+                .multiPart("file", file)
+                .multiPart("due_date", fileJson.get("due_date").toString());
+    }
+
+    public void setUpdateTaskWithoutID(File json) {
+        JsonPath fileJson = new JsonPath(json);
+        File images = new File(Constants.UPLOAD_IMAGE + "test2.PNG");
+        File file = new File(Constants.UPLOAD_FILE + "tes2.pdf");
+        int id = 0;
+        SerenityRest.given()
+                .pathParam("id",id)
+                .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR)
+                .contentType("multipart/form-data")
+                .multiPart("title", fileJson.get("title").toString())
+                .multiPart("description", fileJson.get("description").toString())
+                .multiPart("images", images)
+                .multiPart("file", file)
+                .multiPart("due_date", fileJson.get("due_date").toString());
+    }
+
+    public void setUpdateTaskValid(int id, String title, String description, String images, String file, String time) {
+        SerenityRest.given()
+                .pathParam("id",id)
+                .headers("Authorization","Bearer "+ Constants.TOKEN_MENTOR).log().all()
+                .contentType("multipart/form-data")
+                .multiPart("title", title)
+                .multiPart("description", description)
+                .multiPart("images", new File (Constants.UPLOAD_IMAGE +images))
+                .multiPart("file", new File (Constants.UPLOAD_FILE +file))
+                .multiPart("due_date", time);
     }
 }

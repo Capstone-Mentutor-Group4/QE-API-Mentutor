@@ -4,7 +4,7 @@ Feature: PUT Update Profile User as Mentor
     When Send request post login
     And Set token to Token Mentor
 
-  @Test @Mentor @UpdateProfile @Positive-Case #MNTR-005
+  @Test @Mentor @UpdateProfile @Positive-Case #MNTR-005 #BUG
   Scenario: PUT Update profile mentor with all valid data
     Given Mentor set request update profile with valid JSON "UpdateProfileWithValidData.json"
     When User send request put update data
@@ -111,7 +111,7 @@ Feature: PUT Update Profile User as Mentor
     Then Should return 400 Bad Request
     And Validate response body should display error message "Invalid Input From Client"
 
-  @Test @Mentor @UpdateProfile @Negative-Case #MNTR-020
+  @Test @Mentor @UpdateProfile @Negative-Case #MNTR-020 #Fail-Case
   Scenario: PUT Update profile Mentor with empty data
     Given Mentor set request update profile with valid JSON "UpdateProfleWithEmpty.json"
     When User send request put update data
