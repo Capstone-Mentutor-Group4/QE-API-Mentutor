@@ -1,7 +1,6 @@
 package Mentutor.StepDef.Mentor;
 
 import Mentutor.Utils.Constants;
-import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;

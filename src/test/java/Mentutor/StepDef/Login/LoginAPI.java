@@ -15,6 +15,11 @@ public class LoginAPI {
     public void postLoginMentor(File json){
         SerenityRest.given().contentType(ContentType.JSON).body(json);
     }
+    @Step("Post Login Mentee")
+    public void postLoginMentee(File json){
+        SerenityRest.given().contentType(ContentType.JSON).body(json);
+    }
+
 
     @And("Set token to Token Mentor")
     public void setTokenToMentorToken() {
