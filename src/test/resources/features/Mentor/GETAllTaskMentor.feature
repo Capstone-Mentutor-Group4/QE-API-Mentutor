@@ -19,3 +19,5 @@ Feature: Get All Task as Mentor
     Then Should return 400 Bad Request
     And Validate response body should display message "missing or malformed jwt"
 
+    #GET ALL TASK-WAHID
+

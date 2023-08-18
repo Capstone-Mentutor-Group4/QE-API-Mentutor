@@ -59,4 +59,16 @@ public class GetAllTaskMentor {
     public void mentorSetIdTaskToWithoutTokenMentor(int id) {
         mentorAPI.setGetDetailTaskWithoutToken(id);
     }
+
+    //DELETE TASK FEATURE
+    @Given("Mentor set id task empty")
+    public void mentorSetIdTaskEmpty() {
+        int id = 0;
+        mentorAPI.setGetDetailTask(id);
+    }
+
+    @When("Mentor send request delete task")
+    public void mentorSendRequestDeleteTask() {
+        SerenityRest.when().delete(MentorAPI.GET_DETAIL_TASK);
+    }
 }

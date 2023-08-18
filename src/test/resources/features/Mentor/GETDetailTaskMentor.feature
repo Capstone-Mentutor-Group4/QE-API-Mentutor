@@ -32,3 +32,5 @@ Feature: Get Detail Task as Mentor
     When Mentor send request get detail task
     Then Should return 400 Bad Request
     And Validate response body should display message "missing or malformed jwt"
+
+    #GET DETAIL TASK-WAHID

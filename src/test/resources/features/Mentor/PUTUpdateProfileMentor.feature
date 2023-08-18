@@ -116,3 +116,5 @@ Feature: PUT Update Profile User as Mentor
     Given Mentor set request update profile with valid JSON "UpdateProfleWithEmpty.json"
     When User send request put update data
     Then Should return 400 Bad Request
+
+    #UPDATE PROFILE-WAHID
