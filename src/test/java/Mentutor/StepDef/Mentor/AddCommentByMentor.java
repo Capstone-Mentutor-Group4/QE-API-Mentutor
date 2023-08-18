@@ -17,7 +17,7 @@ public class AddCommentByMentor {
 
     @Given("Mentor set valid ID status {int} and comment with valid JSON {string}")
     public void mentorSetValidIDAndCommentWithValidJSON(int id_status, String jsonName) {
-        File json = new File(MentorAPI.MENTOR_COMMENT + "" + jsonName + "");
+        File json = new File(MentorAPI.MENTOR_COMMENT + ""+jsonName+"");
         mentorAPI.setAddMentorCommentValid(id_status, json);
     }
 
