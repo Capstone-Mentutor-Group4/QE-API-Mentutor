@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        tags = "@GETStatus",
+        tags = "@Tugas or @TokenAdmin",
         plugin = {"pretty"},
         features = "classpath:features"
 )

@@ -2,7 +2,6 @@ package Mentutor.Utils;
 
 import io.cucumber.java.en.And;
 import net.serenitybdd.rest.SerenityRest;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class MentutorResponses {
@@ -13,6 +12,7 @@ public class MentutorResponses {
     public static String ROLE = "data.role";
     public static String CLASS = "data.class_name";
     public static String TOKEN = "data.token";
+
     public static String ERROR_MESSAGE = "'message error'";
     public static String MESSAGE = "message";
 

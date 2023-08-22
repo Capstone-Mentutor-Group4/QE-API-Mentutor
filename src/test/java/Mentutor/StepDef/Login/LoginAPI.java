@@ -6,9 +6,11 @@ import io.restassured.http.ContentType;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 
+
 import java.io.File;
 
 public class LoginAPI {
+
     public static String LOGIN = Constants.BASE_URL+"/login";
 
     @Step("Post Login Mentor")
@@ -30,5 +32,10 @@ public class LoginAPI {
     public void setTokenToBaseMenteeToken() {
         SerenityRest.when().post(LoginAPI.LOGIN);
         Constants.TOKEN_MENTEE = SerenityRest.then().extract().path("data.token");
+    }
+
+    @Step("Post Login Admin")
+    public void postLoginAdmin(File json){
+        SerenityRest.given().contentType(ContentType.JSON).body(json);
     }
 }

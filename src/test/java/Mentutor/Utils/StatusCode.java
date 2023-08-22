@@ -28,5 +28,4 @@ public class StatusCode {
     public void shouldReturnMethodNotAllowed(int notAllowed){
         SerenityRest.then().statusCode(notAllowed);
     }
-
 }
