@@ -245,7 +245,7 @@ public class MentorAPI {
     }
 
     @Step("Post Add Comment Valid By Mentor")
-    public void setAddCommentValid(int id_status, File json) {
+    public void setAddMentorCommentValid(int id_status, File json) {
         JsonPath fileJson = new JsonPath(json);
         SerenityRest.given()
                 .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR)
@@ -254,11 +254,21 @@ public class MentorAPI {
                 .log().all();
     }
 
-    public void setAddMentorCommentValid(int id_status, String caption) {
+//    public void setAddMentorCommentValid(int id_status, String caption) {
+//        SerenityRest.given()
+//                .headers("Authorization","Bearer "+ Constants.TOKEN_MENTOR)
+//                .pathParam("id_status",id_status)
+//                .formParam("caption", caption)
+//                .log().all();
+//    }
+
+    @Step ("Post Add Comment Invalid By Mentor")
+    public void setAddMentorCommentInvalid(String id_status, File json) {
+        JsonPath fileJson = new JsonPath(json);
         SerenityRest.given()
-                .headers("Authorization","Bearer "+ Constants.TOKEN_MENTOR)
-                .pathParam("id_status",id_status)
-                .multiPart("caption", caption)
+                .headers("Authorization", "Bearer " + Constants.TOKEN_MENTOR)
+                .pathParam("id_status", id_status)
+                .multiPart("caption", fileJson.get("caption").toString())
                 .log().all();
     }
 

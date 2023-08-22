@@ -83,6 +83,6 @@ Feature: POST Submit Score by Mentor
     And Validate response body should display error message "Invalid Input From Client"
     Examples:
       | id_task | id_submission | score |
-      | 34      | 15            | 95    |
+      | 34      | 25            | 95    |
 
     #SUBMIT SCORE-WAHID
