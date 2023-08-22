@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id_status": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "images": {
+          "type": "string"
+        },
+        "caption": {
+          "type": "string"
+        },
+        "comments": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id_comment": {
+                  "type": "integer"
+                },
+                "nama": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id_comment",
+                "nama",
+                "role",
+                "caption"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id_comment": {
+                  "type": "integer"
+                },
+                "nama": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id_comment",
+                "nama",
+                "role",
+                "caption"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "id_status",
+        "name",
+        "images",
+        "caption",
+        "comments"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
