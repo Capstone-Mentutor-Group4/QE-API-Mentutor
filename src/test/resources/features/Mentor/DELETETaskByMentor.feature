@@ -6,7 +6,7 @@ Feature: DELETE Task by Mentor
 
   @Test @Mentor @Delete @Positive-Case #MNTR-066
   Scenario: DELETE Task with valid id task
-    Given Mentor set id task to 9
+    Given Mentor set id task to 10
     When Mentor send request delete task
     Then Should return 201 Created
     And Validate response body should display message "Delete Success"
