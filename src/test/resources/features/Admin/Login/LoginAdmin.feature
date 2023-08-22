@@ -26,5 +26,3 @@ Feature: Login User Mentutor API
     Then Should return 400 Bad Request
 
 
-
-
