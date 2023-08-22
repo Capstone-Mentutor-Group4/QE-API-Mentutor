@@ -79,5 +79,3 @@ Feature: POST Add Status by Mentee
     And Validate response body should display message "Invalid Input From Client"
 
     #POST STATUS MENTEE - WAHID
-
-
