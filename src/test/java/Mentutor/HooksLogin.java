@@ -13,13 +13,13 @@ import java.io.File;
 public class HooksLogin {
     @Before("@TokenMentee")
     public void loginMentee(){
-        File json = new File(Constants.REQ_BODY+"/LoginMentee.json");
+        File json = new File(Constants.REQ_BODY+"/Login/LoginMentee.json");
         Response response= SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(json)
                 .post(Constants.BASE_URL+"/login");
         JsonPath jsonPath = response.jsonPath();
-        Constants.TOKEN_ADMIN = jsonPath.get("data.token");
+        Constants.TOKEN_MENTEE = jsonPath.get("data.token");
     }
 
     @Before("@TokenAdmin")
@@ -33,10 +33,10 @@ public class HooksLogin {
         Constants.TOKEN_ADMIN = jsonPath.get("data.token");
     }
 
-//    @After("@TokenUser")
-//    public void resetTokenUser() {
-//        Constants.TOKEN_ADMIN = null;
-//    }
+    @After("@TokenMentee")
+    public void resetTokenUser() {
+        Constants.TOKEN_MENTEE = null;
+    }
     @After("@TokenAdmin")
     public void resetTokenAdmin() {
         Constants.TOKEN_ADMIN = null;

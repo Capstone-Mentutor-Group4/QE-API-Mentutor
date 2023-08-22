@@ -7,7 +7,7 @@ import Mentutor.Utils.Constants;
 
 import java.io.File;
 
-public class AdminAPI {
+public class AdminRegistAPI {
     public static String REGISTER_USER = Constants.BASE_URL + "/admin/users";
     public static String REGISTER_CLASS = Constants.BASE_URL + "/admin/classes";
 
