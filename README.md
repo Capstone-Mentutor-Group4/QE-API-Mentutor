@@ -1,9 +1,15 @@
-# Getting started with REST API testing with Serenity and Cucumber 6
+<div align="center">
+  <h1>Welcome to Mentutor</h1>
 
-This is a simple Mentutor project for Serenity with Cucumber 6 and RestAssured
+<a href="">
+    <img src="./todoist-logo.png" width="144" height="144">
+  </a>
 
-## Want to learn more?
-For more information about Serenity BDD, you can read the [**Serenity BDD Book**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation source. Other sources include:
-* **[Byte-sized Serenity BDD](https://www.youtube.com/channel/UCav6-dPEUiLbnu-rgpy7_bw/featured)** - tips and tricks about Serenity BDD
-* [**Serenity BDD Blog**](https://johnfergusonsmart.com/category/serenity-bdd/) - regular articles about Serenity BDD
-* [**The Serenity Dojo**](https://www.serenity-dojo.com) - Tailored BDD and Test Automation Training and Mentoring
+  <p align="center">
+    API Testing with RestAssured and SerenityBDD
+    <br />
+    <a href="https://developer.todoist.com/"><strong>| TODOIST |</strong></a>
+    <br />
+    <br />
+  </p>
+</div>
