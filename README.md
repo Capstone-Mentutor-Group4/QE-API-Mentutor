@@ -62,6 +62,27 @@
 
 ### 💫 Tested Feature Coverage
 
+### 🔐 Authorization
+
+- Sign in
+- Logout
+
+### 🔄 CRUD Data Flow
+
+- User Management
+- Class Management
+- Task Creation
+- Score Submission
+- Forum feature
+- Comment feature
+- Profile Authentication and Data Modification
+- Class Modification
+
+### 🗹 Input Field Validation
+- DataType validation
+- CharCount validation
+- FileType validation
+
 ## Summary Report
 ![report-api-summary]()
 
