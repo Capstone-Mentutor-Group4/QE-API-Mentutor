@@ -2,7 +2,7 @@
   <h1>Welcome to Mentutor</h1>
 
 <a href="">
-    <img src="./todoist-logo.png" width="144" height="144">
+    <img src="src/LogoMentutor.png" width="480" height="360">
   </a>
 
   <p align="center">
@@ -84,13 +84,13 @@
 - FileType validation
 
 ## Summary Report
-![report-api-summary]()
+![report-api-summary](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/src/Result-API-Automation.PNG)
 
 ## Coverage Report
-![report-api-cpverage]()
+![report-api-cpverage](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/src/API-Oveview%20Feature.png)
 
 ## Test Documentation Spreadsheet
-![report-api-chats]()
+![report-api-chats](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/src/Result-API-Summary.PNG)
 
 ## Automation Testing When Run in Intellij IDE
 ![report-api-runningtest]()
