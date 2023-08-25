@@ -8,7 +8,7 @@
   <p align="center">
     API Testing with RestAssured and SerenityBDD
     <br />
-    <a href="https://mentutor.altapro.online/"><strong>| MENTUTOR |</strong></a>
+    <a href="https://app.swaggerhub.com/apis-docs/NURFATUROHMAN28/Mentutor/1.0.0#/"><strong>| MENTUTOR |</strong></a>
     <br />
     <br />
   </p>
@@ -22,7 +22,7 @@
 <p align="justify">This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an API Automation Testing for 3 users feature or end points (Admin, Mentor, and Mentee).</p>
 
 ## 📓 Documentation
-#### 👨‍🚀   [Postman Colection](https://www.postman.com/interstellar-space-651335/workspace/team-workspace)
+#### 👨‍🚀   [Postman Colection](https://www.postman.com/grup4mentutor/workspace/grup4-capstone/collection/29020822-96993c6f-a4ff-45d2-8648-ea771be689da?action=share&creator=29020824&active-environment=29020822-583e7ffb-b85b-44de-990f-b38f9adf41ca)
 #### 👀   [Test Case API](https://docs.google.com/spreadsheets/d/1qDjXGXzpuRLn5kblI5l44qolbbaMzUMSLN_zMVlE7FU/edit#gid=0)
 #### 📝   [Test Automation Report](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor.git)
 
