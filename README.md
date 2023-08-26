@@ -23,8 +23,8 @@
 
 ## 📓 Documentation
 #### 👨‍🚀   [Postman Colection](https://www.postman.com/grup4mentutor/workspace/grup4-capstone/collection/29020822-96993c6f-a4ff-45d2-8648-ea771be689da?action=share&creator=29020824&active-environment=29020822-583e7ffb-b85b-44de-990f-b38f9adf41ca)
-#### 👀   [Test Case API](https://docs.google.com/spreadsheets/d/1qDjXGXzpuRLn5kblI5l44qolbbaMzUMSLN_zMVlE7FU/edit#gid=0)
-#### 📝   [Test Automation Report](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor.git)
+#### 👀   [Test Run API](https://youtu.be/uVznyPqk6xA)
+#### 📝   [Test Automation Report](https://drive.google.com/drive/folders/1oZYfWFdVxSvToY_mKirjFhSUmBmxF_9W?usp=sharing)
 
 
 ## 🛠 Tools
@@ -123,11 +123,11 @@ $ mvn clean verify
 
 ## 📱 Our teams
 
-[![LinkedIn](https://img.shields.io/badge/-Fahrul%20Rozi-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/rolando-tigor-b02565173)
-[![GitHub](https://img.shields.io/badge/-FahrulRozi-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/tigorrr4/)
+[![LinkedIn](https://img.shields.io/badge/-Fahrul%20Rozi-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/fahrulroziabdibahari/)
+[![GitHub](https://img.shields.io/badge/-FahrulRozi-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/FahrulRoziAbdi)
 
-[![LinkedIn](https://img.shields.io/badge/-Wahid%20Abdul%20Azis-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/mkhairul-fahmi-rasyidin-0723411ba)
-[![GitHub](https://img.shields.io/badge/-WahidAbdulAzis-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/sultanjoss/)
+[![LinkedIn](https://img.shields.io/badge/-Wahid%20Abdul%20Azis-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/wahid-azis-98954b243/)
+[![GitHub](https://img.shields.io/badge/-WahidAbdulAzis-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/WahidAzis)
 
 <h5>
 <p align="center">:copyright: 2023 | This Repository Built with :heart: from Group-4</p>
