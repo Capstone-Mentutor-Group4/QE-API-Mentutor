@@ -2,7 +2,7 @@
   <h1>Welcome to Mentutor</h1>
 
 <a href="">
-    <img src="src/LogoMentutor.png" width="480" height="360">
+    <img src="src/LogoMentutor.png" width="480" height="280">
   </a>
 
   <p align="center">
@@ -84,19 +84,19 @@
 - FileType validation
 
 ## Summary Report
-![report-api-summary](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/src/Result-API-Automation.PNG)
+![report-api-summary](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/Result-API-Automation%20NEW.png)
 
 ## Coverage Report
-![report-api-cpverage](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/src/API-Oveview%20Feature.png)
+![report-api-cpverage](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/API-Oveview%20Feature%20NEW.png)
 
 ## Test Documentation Spreadsheet
-![report-api-chats](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/src/Result-API-Summary.PNG)
+![report-api-chats](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/Summary%20Report.PNG)
 
 ## Automation Testing When Run in Intellij IDE
-![report-api-runningtest]()
+![report-api-runningtest](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/Testrun_API-Oveview%20Feature.png)
 
 ## Manual Testing When Run in Postman
-![report-api-runningtest]()
+![report-api-runningtest](https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor/blob/master/src/SS_POSTMAN.PNG)
 
 ## 🏎️ How to Run all Test Scenarios
 
